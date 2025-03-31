@@ -11,17 +11,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
 /**
  * Main activity of the BMI Calculator app.
  */
 public class MainActivity extends AppCompatActivity {
 
 
-    /** EditText fields for user to enter weight and height. */
+    /**
+     * EditText fields for user to enter weight and height.
+     */
     EditText weightEditText, heightEditText;
-    /** Button to trigger BMI calculation. */
+    /**
+     * Button to trigger BMI calculation.
+     */
     Button calculateButton;
-    /** TextView to display the BMI result. */
+    /**
+     * TextView to display the BMI result.
+     */
     TextView resultTextView;
 
     @Override
@@ -34,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         weightEditText = findViewById(R.id.weight);
         heightEditText = findViewById(R.id.height);
         calculateButton = findViewById(R.id.button);
-        resultTextView = findViewById(R.id.result);
+        resultTextView = findViewById(R.id.resultBMI);
 
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,13 +50,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button caloriesButton = findViewById(R.id.btnGoToCalories);
+        caloriesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Calories.class);
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
     }
+
     /**
      * Calculates the BMI based on the entered weight and height.
      * The result is displayed in the resultTextView along with the BMI category.
