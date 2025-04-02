@@ -1,5 +1,6 @@
 package com.example.zad1bmi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -60,6 +61,43 @@ public class Calories extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 calculateCalories();
+            }
+        });
+
+        Button recipesButton = findViewById(R.id.btnCulinaryRecomendations);
+        recipesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Calories.this, RecipesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recipesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String resultText = resultTextView.getText().toString();
+
+                if (!resultText.startsWith("Your daily calorie need")) {
+                    resultTextView.setText("Calculate calories first!");
+                    return;
+                }
+
+                double tdeeValue = Double.parseDouble(resultText.replaceAll("[^0-9.]", ""));
+
+                int[] availableCalories = {1000, 1200, 1600, 2000, 2400, 2800};
+
+                int roundedCalories = availableCalories[0];
+                for (int cal : availableCalories) {
+                    if (cal <= tdeeValue) {
+                        roundedCalories = cal;
+                    } else {
+                        break;
+                    }
+                }
+                Intent intent = new Intent(Calories.this, RecipesActivity.class);
+                intent.putExtra("CALORIES_NEEDED", roundedCalories);
+                startActivity(intent);
             }
         });
     }
