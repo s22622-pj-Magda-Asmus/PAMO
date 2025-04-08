@@ -26,10 +26,6 @@ public class StartActivity extends AppCompatActivity {
 
         Button btnStart = findViewById(R.id.btnStart);
 
-        /**
-         * Handles the "Start" button click event.
-         * Navigates to MainActivity and closes StartActivity.
-         */
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

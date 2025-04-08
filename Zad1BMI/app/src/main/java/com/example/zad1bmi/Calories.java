@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import java.util.Locale;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,7 +65,7 @@ public class Calories extends AppCompatActivity {
             }
         });
 
-        Button recipesButton = findViewById(R.id.btnCulinaryRecomendations);
+        Button recipesButton = findViewById(R.id.btnCulinaryRecommendations);
         recipesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,7 +80,7 @@ public class Calories extends AppCompatActivity {
                 String resultText = resultTextView.getText().toString();
 
                 if (!resultText.startsWith("Your daily calorie need")) {
-                    resultTextView.setText("Calculate calories first!");
+                    resultTextView.setText(getString(R.string.calculate_first));
                     return;
                 }
 
@@ -112,9 +113,8 @@ public class Calories extends AppCompatActivity {
         String heightText = heightEditText.getText().toString();
         String ageText = ageEditText.getText().toString();
 
-        // Check if any field is empty
         if (weightText.isEmpty() || heightText.isEmpty() || ageText.isEmpty()) {
-            resultTextView.setText("Please fill all fields.");
+            resultTextView.setText(getString(R.string.fill_all_fields));
             return;
         }
 
@@ -124,7 +124,7 @@ public class Calories extends AppCompatActivity {
         String selectedGender = genderSpinner.getSelectedItem().toString();
 
         double bmr;
-        boolean isMale = selectedGender.equals("Male");
+        boolean isMale = selectedGender.equals(getString(R.string.gender_male));
 
         if (isMale) {
             bmr = 88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age);
@@ -137,6 +137,7 @@ public class Calories extends AppCompatActivity {
 
         double tdee = bmr * activityMultipliers[activityIndex];
 
-        resultTextView.setText(String.format("Your daily calorie need: %.2f kcal", tdee));
+        String result = String.format(Locale.US, getString(R.string.daily_calorie_need), tdee);
+        resultTextView.setText(result);
     }
 }

@@ -45,10 +45,10 @@ public class RecipesActivity extends AppCompatActivity {
         }
 
         if (filteredRecipes.isEmpty()) {
-            recipeTitle.setText("No recipes for " + caloriesNeeded + " kcal");
+            recipeTitle.setText(getString(R.string.no_recipes_for_calories, caloriesNeeded));
             recipePlan.setText("");
         } else {
-            recipeTitle.setText("Recipes for " + caloriesNeeded + " kcal");
+            recipeTitle.setText(getString(R.string.recipes_for_calories, caloriesNeeded));
             displayRecipes();
         }
     }
