@@ -1,17 +1,17 @@
 package com.example.zad1bmi.utils;
 
 /**
- * Klasa pomocnicza do obliczania wartości BMI i przypisywania kategorii.
+ * Helper class for calculating BMI (Body Mass Index) and determining the BMI category.
  */
 public class BmiUtils {
 
     /**
-     * Oblicza BMI (Body Mass Index).
+     * Calculates BMI (Body Mass Index).
      *
-     * @param weight Waga w kg
-     * @param height Wzrost w metrach
-     * @return Obliczone BMI
-     * @throws IllegalArgumentException jeśli height <= 0
+     * @param weight Weight in kilograms
+     * @param height Height in meters
+     * @return Calculated BMI
+     * @throws IllegalArgumentException if height <= 0
      */
     public static float calculateBMI(float weight, float height) {
         if (height <= 0) {
@@ -21,11 +21,11 @@ public class BmiUtils {
     }
 
     /**
-     * Zwraca kategorię BMI w zależności od wartości.
-     * (Wersja uproszczona, zwracana jako zwykły tekst.)
+     * Returns the BMI category based on the BMI value.
+     * (Simplified version, returned as plain text.)
      *
-     * @param bmi wartość BMI
-     * @return String z nazwą kategorii.
+     * @param bmi BMI value
+     * @return A string representing the BMI category.
      */
     public static String getBMICategory(float bmi) {
         if (bmi < 18.5f) {
