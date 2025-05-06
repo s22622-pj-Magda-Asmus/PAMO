@@ -1,7 +1,11 @@
 package com.example.zad1bmi;
+
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +21,8 @@ public class RecipesActivity extends AppCompatActivity {
     int index = 0;
     List<String> filteredRecipes;
 
+    Button listButton;
+
     /**
      * Called when the activity is created.
      * Initializes the UI components, retrieves the caloric needs from the previous activity,
@@ -29,6 +35,7 @@ public class RecipesActivity extends AppCompatActivity {
 
         recipeTitle = findViewById(R.id.recipeTitle);
         recipePlan = findViewById(R.id.recipePlan);
+        listButton = findViewById(R.id.listButton);
 
         int caloriesNeeded = getIntent().getIntExtra("CALORIES_NEEDED", 0);
 
@@ -51,7 +58,18 @@ public class RecipesActivity extends AppCompatActivity {
             recipeTitle.setText(getString(R.string.recipes_for_calories, caloriesNeeded));
             displayRecipes();
         }
+
+        Button listButton = findViewById(R.id.listButton);
+        listButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecipesActivity.this, ShoppingListActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
     /**
      * Displays the filtered recipes in the UI.
      * Shows up to three recipes at a time, including their titles and preparation instructions.

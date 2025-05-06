@@ -36,29 +36,65 @@
     </string-array>
     <string name="logo">Application logo</string>
     <string-array name="recipes">
-        <item>1000 kcal - Oatmeal with fruits|Ingredients: 50g oats, 200ml milk, 1 tablespoon honey, a handful of raspberries. Preparation: Heat the milk, add oats, and cook for 5 minutes. Add the fruits and mix.</item>
-        <item>1000 kcal - Tuna Salad|Ingredients: 100g tuna, 100g lettuce, 50g tomatoes, 1 teaspoon olive oil. Preparation: Mix the ingredients and drizzle with olive oil.</item>
-        <item>1000 kcal - Banana Smoothie|Ingredients: 1 banana, 200ml milk, 1 tablespoon peanut butter. Preparation: Blend everything until smooth.</item>
+        <item>1000 kcal - Oatmeal with fruits|Ingredients: 50g oats, 200ml milk, 1 tablespoon honey, a handful of
+            raspberries. Preparation: Heat the milk, add oats, and cook for 5 minutes. Add the fruits and mix.
+        </item>
+        <item>1000 kcal - Tuna Salad|Ingredients: 100g tuna, 100g lettuce, 50g tomatoes, 1 teaspoon olive oil.
+            Preparation: Mix the ingredients and drizzle with olive oil.
+        </item>
+        <item>1000 kcal - Banana Smoothie|Ingredients: 1 banana, 200ml milk, 1 tablespoon peanut butter. Preparation:
+            Blend everything until smooth.
+        </item>
 
-        <item>1200 kcal - Scrambled Eggs with Vegetables|Ingredients: 2 eggs, 50g spinach, 1 teaspoon butter, 50g feta cheese. Preparation: Sauté the spinach in butter, add eggs and cook, stirring. Sprinkle with feta.</item>
-        <item>1200 kcal - Grilled Chicken with Buckwheat|Ingredients: 150g chicken breast, 100g buckwheat, 1 tablespoon olive oil, 100g broccoli. Preparation: Grill the chicken and serve with cooked buckwheat and broccoli.</item>
-        <item>1200 kcal - Yogurt with Nuts|Ingredients: 150g natural yogurt, 10g walnuts, 1 teaspoon honey. Preparation: Mix all ingredients together.</item>
+        <item>1200 kcal - Scrambled Eggs with Vegetables|Ingredients: 2 eggs, 50g spinach, 1 teaspoon butter, 50g feta
+            cheese. Preparation: Sauté the spinach in butter, add eggs and cook, stirring. Sprinkle with feta.
+        </item>
+        <item>1200 kcal - Grilled Chicken with Buckwheat|Ingredients: 150g chicken breast, 100g buckwheat, 1 tablespoon
+            olive oil, 100g broccoli. Preparation: Grill the chicken and serve with cooked buckwheat and broccoli.
+        </item>
+        <item>1200 kcal - Yogurt with Nuts|Ingredients: 150g natural yogurt, 10g walnuts, 1 teaspoon honey. Preparation:
+            Mix all ingredients together.
+        </item>
 
-        <item>1600 kcal - Omelette with Vegetables and Cheese|Ingredients: 2 eggs, 50g bell pepper, 50g ham, 30g cheese. Preparation: Fry the omelette, adding vegetables and cheese.</item>
-        <item>1600 kcal - Baked Salmon with Sweet Potatoes|Ingredients: 150g salmon, 150g sweet potatoes, 1 teaspoon olive oil, 100g green beans. Preparation: Bake the salmon and sweet potatoes at 180°C for 20 minutes.</item>
-        <item>1600 kcal - Fruit Salad|Ingredients: 1 banana, 100g strawberries, 50g nuts, 150g natural yogurt. Preparation: Chop the fruits and mix with yogurt.</item>
+        <item>1600 kcal - Omelette with Vegetables and Cheese|Ingredients: 2 eggs, 50g bell pepper, 50g ham, 30g cheese.
+            Preparation: Fry the omelette, adding vegetables and cheese.
+        </item>
+        <item>1600 kcal - Baked Salmon with Sweet Potatoes|Ingredients: 150g salmon, 150g sweet potatoes, 1 teaspoon
+            olive oil, 100g green beans. Preparation: Bake the salmon and sweet potatoes at 180°C for 20 minutes.
+        </item>
+        <item>1600 kcal - Fruit Salad|Ingredients: 1 banana, 100g strawberries, 50g nuts, 150g natural yogurt.
+            Preparation: Chop the fruits and mix with yogurt.
+        </item>
 
-        <item>2000 kcal - Avocado Toast with Egg|Ingredients: 2 slices of bread, 1 avocado, 1 fried egg. Preparation: Mash the avocado, spread it on the bread, and top with the egg.</item>
-        <item>2000 kcal - Chicken Curry with Rice|Ingredients: 150g chicken, 100g rice, 50ml coconut milk, 50g bell pepper. Preparation: Fry the chicken, add coconut milk, and serve with rice.</item>
-        <item>2000 kcal - Protein Shake|Ingredients: 200ml milk, 30g protein powder, 1 tablespoon peanut butter, 1 banana. Preparation: Blend all ingredients together.</item>
+        <item>2000 kcal - Avocado Toast with Egg|Ingredients: 2 slices of bread, 1 avocado, 1 fried egg. Preparation:
+            Mash the avocado, spread it on the bread, and top with the egg.
+        </item>
+        <item>2000 kcal - Chicken Curry with Rice|Ingredients: 150g chicken, 100g rice, 50ml coconut milk, 50g bell
+            pepper. Preparation: Fry the chicken, add coconut milk, and serve with rice.
+        </item>
+        <item>2000 kcal - Protein Shake|Ingredients: 200ml milk, 30g protein powder, 1 tablespoon peanut butter, 1
+            banana. Preparation: Blend all ingredients together.
+        </item>
 
-        <item>2400 kcal - Eggs with Bacon|Ingredients: 2 eggs, 50g bacon, 50g bread. Preparation: Fry the bacon and eggs, and serve with bread.</item>
-        <item>2400 kcal - Beef Steak with Potatoes|Ingredients: 150g steak, 200g potatoes, 1 tablespoon butter, 50g green beans. Preparation: Fry the steak and serve with potatoes and green beans.</item>
-        <item>2400 kcal - Oatmeal with Dried Fruits|Ingredients: 50g oats, 30g nuts, 1 tablespoon honey, 200ml milk. Preparation: Cook the oatmeal and add the dried fruits.</item>
+        <item>2400 kcal - Eggs with Bacon|Ingredients: 2 eggs, 50g bacon, 50g bread. Preparation: Fry the bacon and
+            eggs, and serve with bread.
+        </item>
+        <item>2400 kcal - Beef Steak with Potatoes|Ingredients: 150g steak, 200g potatoes, 1 tablespoon butter, 50g
+            green beans. Preparation: Fry the steak and serve with potatoes and green beans.
+        </item>
+        <item>2400 kcal - Oatmeal with Dried Fruits|Ingredients: 50g oats, 30g nuts, 1 tablespoon honey, 200ml milk.
+            Preparation: Cook the oatmeal and add the dried fruits.
+        </item>
 
-        <item>2800 kcal - Peanut Butter Sandwiches|Ingredients: 2 slices of bread, 2 tablespoons peanut butter, 1 banana. Preparation: Spread the peanut butter on the bread and add the banana.</item>
-        <item>2800 kcal - Pasta with Chicken and Pesto|Ingredients: 150g pasta, 150g chicken, 50g pesto, 30g parmesan. Preparation: Cook the pasta, add chicken and pesto.</item>
-        <item>2800 kcal - Protein Omelette with Cottage Cheese|Ingredients: 4 egg whites, 100g cottage cheese, 1 tablespoon olive oil. Preparation: Fry the omelette and sprinkle with cottage cheese.</item>
+        <item>2800 kcal - Peanut Butter Sandwiches|Ingredients: 2 slices of bread, 2 tablespoons peanut butter, 1
+            banana. Preparation: Spread the peanut butter on the bread and add the banana.
+        </item>
+        <item>2800 kcal - Pasta with Chicken and Pesto|Ingredients: 150g pasta, 150g chicken, 50g pesto, 30g parmesan.
+            Preparation: Cook the pasta, add chicken and pesto.
+        </item>
+        <item>2800 kcal - Protein Omelette with Cottage Cheese|Ingredients: 4 egg whites, 100g cottage cheese, 1
+            tablespoon olive oil. Preparation: Fry the omelette and sprinkle with cottage cheese.
+        </item>
     </string-array>
     <string name="recipes_for_calories">Recipes for %1$d kcal</string>
     <string name="no_recipes_for_calories">No recipes for %1$d kcal</string>
