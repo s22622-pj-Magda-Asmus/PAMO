@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
 import java.util.Locale;
 
 import androidx.activity.EdgeToEdge;
@@ -14,7 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import android.content.Intent;
-
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import com.example.zad1bmi.utils.BmiUtils;
 
 /**
@@ -59,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        WebView webView = findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadData("<h1>Test WebView działa!</h1>", "text/html", "UTF-8");
+        webView.loadUrl("file:///android_asset/chart.html");
+
     }
 
     /**

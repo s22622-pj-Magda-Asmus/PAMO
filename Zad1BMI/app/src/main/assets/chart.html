@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zmiana wagi w czasie</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Data', 'Waga (kg)'],
+            ['2024-12', 85],
+            ['2025-01', 82],
+            ['2025-02', 79],
+            ['2025-03', 76],
+            ['2025-04', 74],
+            ['2025-05', 72]
+          ]);
+
+          var options = {
+            title: 'Zmiana masy ciała w czasie',
+            hAxis: { title: 'Data' },
+            vAxis: { title: 'Waga (kg)' },
+            legend: 'none',
+            pointSize: 6
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('linechart'));
+          chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div id="linechart" style="width: 100%; height: 400px;"></div>
+</body>
+</html>
